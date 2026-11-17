@@ -1,0 +1,356 @@
+/* ===== 1. BASIC SETTINGS (apply to the whole page) ===== */
+body {
+    margin: 0;                        /* remove the default space around the page */
+    font-family: Arial;
+    line-height: 1.6;                 /* space between lines */
+    color: white;
+    background-color: #12408C;        /* blueprint blue */
+}
+
+h1, h2, h3 {
+    font-family: "Courier New";       /* technical heading style */
+}
+
+a {
+    color: #FFD23F;                   /* drafting yellow for links */
+}
+
+.content {
+    padding: 30px;                    /* space around the main content */
+}
+
+.section {
+    padding: 15px;                    /* space around each section */
+}
+
+/* ===== 2. HEADER AND NAVIGATION ===== */
+.site-header {
+    background-color: #0B2B63;        /* darker blue */
+    border: 2px solid #FFD23F;
+    padding: 20px;
+}
+
+.logo {
+    font-family: "Courier New";
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;            /* remove the underline */
+}
+
+.nav-links {
+    line-height: 2.6;                 /* room for the link borders when links wrap */
+}
+
+.nav-link, .nav-link-active {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px;
+    margin: 3px;
+}
+
+.nav-link {
+    color: white;
+    border: 1px solid #0B2B63;        /* same color as the header, so it looks invisible */
+}
+
+.nav-link-active {
+    color: #FFD23F;
+    border: 1px solid #FFD23F;        /* outline shows the current page */
+}
+
+/* ===== 3. HERO ===== */
+.hero {
+    text-align: center;
+    padding: 30px;
+}
+
+.sheet-label {
+    color: #FFD23F;
+    border: 1px solid #FFD23F;
+    font-family: "Courier New";
+    font-size: 14px;
+    padding: 6px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin: 20px;
+}
+
+.tagline {
+    font-size: 22px;
+}
+
+.role {
+    color: #C9D8F0;                   /* soft light blue */
+}
+
+/* ===== 4. HEADINGS AND TEXT ===== */
+h2 {
+    font-size: 24px;
+    color: #FFD23F;
+    background-color: #0B2B63;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.text {
+    margin: 10px;
+}
+
+/* ===== 5. BOXES (cards) ===== */
+.card, .info-card, .exhibit-card, .note-box {
+    background-color: #0B2B63;
+    margin: 10px;
+}
+
+.card {
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.info-card {
+    border: 2px solid #FFD23F;
+    padding: 20px;
+}
+
+.card p, .info-card p, .exhibit-body p {
+    color: #C9D8F0;
+}
+
+.card h3, .info-card h3, .exhibit-body h3 {
+    font-size: 20px;
+}
+
+.card-label {
+    color: #FFD23F;
+    font-family: "Courier New";
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Exhibit boxes: the museum-style label strip in blueprint colors */
+.exhibit-card {
+    border: 2px solid white;
+}
+
+.exhibit-label {
+    background-color: #FFD23F;
+    color: #0B2B63;
+    font-family: "Courier New";
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.exhibit-body {
+    padding: 20px;
+}
+
+.exhibit-body a {
+    font-weight: bold;
+}
+
+/* Centers the picture and its title inside an exhibit box */
+.centered {
+    text-align: center;
+}
+
+img {
+    border: 2px solid white;
+}
+
+/* Skill labels highlighted with the mark tag */
+mark {
+    background-color: #FFD23F;
+    color: #0B2B63;
+    font-size: 14px;
+    padding: 4px;
+    margin: 4px;
+}
+
+.badge-line {
+    line-height: 2.2;
+}
+
+/* Notes box */
+.note-box {
+    border: 2px solid #FFD23F;
+    padding: 20px;
+}
+
+.note-box li {
+    color: #C9D8F0;
+    padding: 6px;
+}
+
+.note-box strong {
+    color: #FFD23F;
+}
+
+/* Lists shown as bordered rows */
+.goal-list {
+    margin: 10px;
+}
+
+.goal-list li {
+    background-color: #0B2B63;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.closing-note {
+    text-align: center;
+    font-family: "Courier New";
+    color: #C9D8F0;
+}
+
+/* ===== 6. TABLES ===== */
+.facts-table, .data-table, .title-block {
+    background-color: #0B2B63;
+    margin: 10px;
+}
+
+.facts-table th, .facts-table td, .data-table th, .data-table td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+.facts-table th {
+    color: #FFD23F;
+    background-color: #12408C;
+    font-family: "Courier New";
+}
+
+.data-table th {
+    color: #0B2B63;
+    background-color: #FFD23F;        /* yellow header row */
+    font-family: "Courier New";
+}
+
+.skill-table td {
+    line-height: 2.2;                 /* room for the highlighted skills */
+}
+
+caption {
+    color: #FFD23F;
+    font-family: "Courier New";
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+}
+
+/* ===== 7. FOOTER AND TITLE BLOCK ===== */
+.site-footer {
+    background-color: #0B2B63;
+    border: 2px solid #FFD23F;
+    padding: 20px;
+}
+
+.title-block th, .title-block td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.title-block th {
+    color: #FFD23F;
+    font-family: "Courier New";
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 13px;
+    color: #C9D8F0;
+}
+
+/* ===== 8. RESPONSIVE DESIGN (media queries from Lab Session 09) ===== */
+
+/* Phones and small tablets: screens up to 600px wide */
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 5px;
+    }
+
+    .section {
+        padding: 5px;
+    }
+
+    .site-header, .site-footer {
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 8px;
+        margin: 5px;
+    }
+
+    .text, .goal-list {
+        margin: 5px;
+    }
+
+    .card, .info-card, .note-box {
+        padding: 12px;
+        margin: 5px;
+    }
+
+    .exhibit-card, .facts-table, .data-table, .title-block {
+        margin: 5px;
+    }
+
+    .exhibit-body {
+        padding: 12px;
+    }
+
+    .goal-list li {
+        margin: 5px;
+    }
+
+    .facts-table th, .facts-table td, .data-table th, .data-table td {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .title-block th, .title-block td {
+        padding: 4px;
+        font-size: 12px;
+    }
+}
+
+/* Very small phones: screens up to 380px wide */
+@media screen and (max-width: 380px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .sheet-label {
+        font-size: 12px;
+    }
+}
